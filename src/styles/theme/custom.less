@@ -1,0 +1,101 @@
+.tm-button-default {
+  background-color: @global-default-background;
+  color: @global-muted-color;
+  border: solid 1px @global-success-background;
+  font-weight: bold;
+  height: 53px;
+
+  &:hover, &:focus {
+    background-color: @global-success-background;
+    color: @global-inverse-color;
+  }
+
+  &:active, &.uk-active {
+    background-color: @global-success-background;
+    color: @global-inverse-color;
+  }
+}
+
+//Warning button (VIP)
+.tm-button-warning {
+  background-color: @button-warning-background;
+  color: @button-warning-color;
+
+  &:hover, &:focus {
+    background-color: @button-warning-hover-background;
+    color: @button-warning-hover-color;
+  }
+
+  &:active, &.uk-active {
+    background-color: @button-warning-active-background;
+    color: @button-warning-active-color;
+  }
+}
+
+.tm-border-rounded {
+  border-radius: 500px;
+}
+
+.tm-padding {
+  padding: 20px;
+}
+
+* + .tm-margin-small {
+    margin-top: 5px !important;
+}
+
+.tm-margin-small {
+  margin-bottom: 5px;
+}
+
+.tm-toggle {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: '\f078';
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    background: none;
+  }
+
+  .uk-open > &::after {
+     content: '\f077';
+    background: none;
+  }
+}
+
+.tm-round {
+  width: 34px;
+  height: 34px;
+  border: 1px solid @global-color;
+}
+
+.tm-text-huge {
+  font-size: @global-xlarge-font-size;
+}
+
+.tm-iconnav-secondary > * > a {
+  background: @global-secondary-background;
+  color: @global-inverse-color;
+}
+
+.tm-contetnt-wrap {
+}
+
+.tm-background-feedbacks {
+  background: darkorange;
+}
+
+.tm-background-calls {
+  background: darkviolet;
+}
+
+.tm-background-messages {
+  background: green;
+}
+
+.tm-background-marks {
+  background: darkred;
+}
