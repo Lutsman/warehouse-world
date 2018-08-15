@@ -6,8 +6,8 @@ const Webpack = require('webpack');
 const Path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractLess = new ExtractTextPlugin({
-    filename: "bundle.css",
-    publicPath: 'styles/',
+    filename: "styles/styles.css",
+    // publicPath: 'styles/',
 });
 
 module.exports = merge(common, {
@@ -26,11 +26,6 @@ module.exports = merge(common, {
         new Webpack.optimize.ModuleConcatenationPlugin(),
         extractLess,
     ],
-    resolve: {
-        alias: {
-            '~': Path.resolve(__dirname, '../src')
-        }
-    },
     module: {
         rules: [
             {

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+</head>
+<body>
+
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
+            <header class=""></header>
+
+            <div class="tm-contetnt-wrap uk-padding-large uk-padding-remove-horizontal">
+                <div class="uk-container uk-container-expand uk-position-relative">
+                    <div uk-grid>
+                        <!--left sidebar-->
+                        <!--<aside class="uk-width-medium">left sidebar</aside>-->
+
+                        <!--main side-->
+                        <div class="uk-width-expand">
+                            <div class="uk-container">
+                                <div class="" uk-margin="margin: uk-margin-top">
+                                    <div>
+                                        <h1>Тендеры</h1>
+                                    </div>
+
+                                    <div class="uk-section uk-padding-remove">
+                                        <div class="uk-card uk-card-default uk-padding-small">
+                                            <div class="uk-flex-between uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="tm-padding uk-padding-remove-horizontal uk-position-relative">
+                                                        <div class="uk-flex">
+                                                            <div class="uk-margin-small-right">На счету:</div>
+                                                            <div class="uk-text-bold">000000 рублей</div>
+                                                        </div>
+                                                        <a href="#" class="uk-position-bottom-right">Пополнить</a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="uk-flex uk-flex-middle">
+                                                        <div class="uk-margin-small-right">Вид услуг:</div>
+                                                        <div>
+                                                            <select class="uk-select" name="type-of-service" id="">
+                                                                <option value="Список">Список</option>
+                                                                <option value="Список">Список</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <select class="tm-select-company uk-select" name="name-of-company"
+                                                            id="tm-name-of-company">
+                                                        <option value="Название компании">Название компании</option>
+                                                        <option value="Название компании">Название компании</option>
+                                                    </select>
+                                                </div>
+
+                                                <div>
+                                                    <a class="uk-link-text" href="">История</a>
+                                                </div>
+
+                                                <div>
+                                                    <a class="uk-link-text" href="">Шаблоны</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-section uk-padding-remove">
+                                        <ul uk-accordion="toggle: .uk-accordion-title">
+                                            <li class="uk-open">
+                                                <div class="tm-tender-nav uk-card uk-card-default">
+                                                    <a class="tm-toggle uk-accordion-title uk-link-reset uk-padding-small" href="#">Тендер 1</a>
+                                                    <div class="tm-tender-subnav uk-padding-small uk-padding-remove-top">
+                                                        <div class="uk-flex-between uk-flex-bottom" uk-grid>
+                                                            <div>
+                                                                <div class="tm-text-global uk-text-muted">01.04.2018</div>
+                                                            </div>
+                                                            <div>
+                                                                <button class="tm-button-default uk-button">Выгрузить в Excel</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="uk-accordion-content uk-card uk-card-default uk-margin-remove">
+                                                    <div class="uk-overflow-auto">
+                                                        <table class="js__et-table tm-table-sort tm-table-bordered uk-table uk-table-responsive uk-table-small uk-table-divider uk-table-middle uk-text-center">
+                                                            <thead>
+                                                            <tr uk-height-match="target: th > div">
+                                                                <th>Название компании</th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Хранение 1 паллет</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Механиз-ная приемка 1 паллет</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Ручная приемка</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Комплектация заказов 1 коробка</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Обмотка стрейч пленкой 2 комплекта</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Оформление документов на отгрузку</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th class="uk-table-shrink">
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Стоимость 1 пустого поддона</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="tm-blur-control">
+                                                                <td class="tm-min-width-medium">
+                                                                    <div class="tm-tender-unselected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/skladologistik.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <h5 class="uk-margin-remove">"Название
+                                                                                    фирмы"</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="tm-tender-selected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/olga-egorova.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                                <div class="uk-flex uk-flex-middle">
+                                                                                    <div class="uk-margin-small-right uk-text-muted">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="uk-text-small">97%</div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <a href=""
+                                                                                   class="uk-h5 uk-margin-remove">Складологистик</a>
+                                                                                <div class="uk-text-muted">Ольга
+                                                                                    Егорова
+                                                                                </div>
+                                                                                <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                    <ul class="uk-iconnav uk-flex-right uk-flex-nowrap">
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="fas fa-phone"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Позвонить</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-comments"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Начать чат</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-paper-plane"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Откликнуться</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>001</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>002</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>003</td>
+                                                                <td class="tm-table-min">000</td>
+                                                            </tr>
+                                                            <tr class="tm-blur-control">
+                                                                <td>
+                                                                    <div class="tm-tender-unselected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/skladologistik.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <h5 class="uk-margin-remove">"Название
+                                                                                    фирмы"</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="tm-tender-selected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/olga-egorova.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                                <div class="uk-flex uk-flex-middle">
+                                                                                    <div class="uk-margin-small-right uk-text-muted">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="uk-text-small">97%</div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <a href=""
+                                                                                   class="uk-h5 uk-margin-remove">Складологистик</a>
+                                                                                <div class="uk-text-muted">Ольга
+                                                                                    Егорова
+                                                                                </div>
+                                                                                <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                    <ul class="uk-iconnav uk-flex-right uk-flex-nowrap">
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="fas fa-phone"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Позвонить</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-comments"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Начать чат</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-paper-plane"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Откликнуться</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>002</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>003</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>004</td>
+                                                                <td>005</td>
+                                                                <td>006</td>
+                                                            </tr>
+                                                            <tr class="tm-blur-control">
+                                                                <td>
+                                                                    <div class="tm-tender-unselected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/skladologistik.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <h5 class="uk-margin-remove">"Название
+                                                                                    фирмы"</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="tm-tender-selected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/olga-egorova.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                                <div class="uk-flex uk-flex-middle">
+                                                                                    <div class="uk-margin-small-right uk-text-muted">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="uk-text-small">97%</div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <a href=""
+                                                                                   class="uk-h5 uk-margin-remove">Складологистик</a>
+                                                                                <div class="uk-text-muted">Ольга
+                                                                                    Егорова
+                                                                                </div>
+                                                                                <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                    <ul class="uk-iconnav uk-flex-right uk-flex-nowrap">
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="fas fa-phone"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Позвонить</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-comments"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Начать чат</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-paper-plane"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Откликнуться</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>003</td>
+                                                                <td>004</td>
+                                                                <td>005</td>
+                                                                <td>006</td>
+                                                                <td>007</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>008</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="tm-tender-nav uk-card uk-card-default">
+                                                    <a class="tm-toggle uk-accordion-title uk-link-reset uk-padding-small" href="#">Тендер 2</a>
+                                                    <div class="tm-tender-subnav uk-padding-small uk-padding-remove-top">
+                                                        <div class="uk-flex-between uk-flex-bottom" uk-grid>
+                                                            <div>
+                                                                <div class="tm-text-global uk-text-muted">01.04.2018</div>
+                                                            </div>
+                                                            <div>
+                                                                <button class="tm-button-default uk-button">Выгрузить в Excel</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="uk-accordion-content uk-card uk-card-default uk-margin-remove">
+                                                    <div class="uk-overflow-auto">
+                                                        <table class="js__et-table tm-table-sort tm-table-bordered uk-table uk-table-responsive uk-table-small uk-table-divider uk-table-middle uk-text-center">
+                                                            <thead>
+                                                            <tr uk-height-match="target: th > div">
+                                                                <th>Название компании</th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Хранение 1 паллет</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Механиз-ная приемка 1 паллет</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Ручная приемка</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Комплектация заказов 1 коробка</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Обмотка стрейч пленкой 2 комплекта</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th>
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Оформление документов на отгрузку</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                                <th class="uk-table-shrink">
+                                                                    <div class="uk-child-width-1-1 uk-flex uk-flex-wrap uk-flex-wrap-between">
+                                                                        <div>Стоимость 1 пустого поддона</div>
+                                                                        <div class="uk-text-right">
+                                                                            <button class="uk-button uk-button-text">
+                                                                                <i class="fas fa-chevron-down"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr class="tm-blur-control">
+                                                                <td class="tm-min-width-medium">
+                                                                    <div class="tm-tender-unselected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/skladologistik.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <h5 class="uk-margin-remove">"Название
+                                                                                    фирмы"</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="tm-tender-selected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/olga-egorova.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                                <div class="uk-flex uk-flex-middle">
+                                                                                    <div class="uk-margin-small-right uk-text-muted">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="uk-text-small">97%</div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <a href=""
+                                                                                   class="uk-h5 uk-margin-remove">Складологистик</a>
+                                                                                <div class="uk-text-muted">Ольга
+                                                                                    Егорова
+                                                                                </div>
+                                                                                <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                    <ul class="uk-iconnav uk-flex-right uk-flex-nowrap">
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="fas fa-phone"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Позвонить</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-comments"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Начать чат</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-paper-plane"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Откликнуться</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>001</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>002</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>003</td>
+                                                                <td class="tm-table-min">000</td>
+                                                            </tr>
+                                                            <tr class="tm-blur-control">
+                                                                <td>
+                                                                    <div class="tm-tender-unselected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/skladologistik.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <h5 class="uk-margin-remove">"Название
+                                                                                    фирмы"</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="tm-tender-selected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/olga-egorova.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                                <div class="uk-flex uk-flex-middle">
+                                                                                    <div class="uk-margin-small-right uk-text-muted">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="uk-text-small">97%</div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <a href=""
+                                                                                   class="uk-h5 uk-margin-remove">Складологистик</a>
+                                                                                <div class="uk-text-muted">Ольга
+                                                                                    Егорова
+                                                                                </div>
+                                                                                <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                    <ul class="uk-iconnav uk-flex-right uk-flex-nowrap">
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="fas fa-phone"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Позвонить</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-comments"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Начать чат</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-paper-plane"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Откликнуться</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>002</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>003</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>004</td>
+                                                                <td>005</td>
+                                                                <td>006</td>
+                                                            </tr>
+                                                            <tr class="tm-blur-control">
+                                                                <td>
+                                                                    <div class="tm-tender-unselected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/skladologistik.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <h5 class="uk-margin-remove">"Название
+                                                                                    фирмы"</h5>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="tm-tender-selected">
+                                                                        <div class="uk-child-width-expand uk-grid-small uk-flex-middle"
+                                                                             uk-grid>
+                                                                            <div class="uk-width-auto">
+                                                                                <img src="images/olga-egorova.png"
+                                                                                     alt="" class="tm-border-dribble">
+                                                                                <div class="uk-flex uk-flex-middle">
+                                                                                    <div class="uk-margin-small-right uk-text-muted">
+                                                                                        <i class="fas fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="uk-text-small">97%</div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="uk-text-left">
+                                                                                <a href=""
+                                                                                   class="uk-h5 uk-margin-remove">Складологистик</a>
+                                                                                <div class="uk-text-muted">Ольга
+                                                                                    Егорова
+                                                                                </div>
+                                                                                <div class="uk-margin-small-top uk-flex uk-flex-middle">
+                                                                                    <ul class="uk-iconnav uk-flex-right uk-flex-nowrap">
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="fas fa-phone"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Позвонить</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-comments"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Начать чат</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <a href=""
+                                                                                               class="tm-nav-big tm-button-hover uk-button uk-padding-remove-horizontal uk-flex uk-flex-middle">
+                                                                                                <div class="tm-button-icon tm-button-small tm-border uk-border-circle">
+                                                                                                    <i class="far fa-paper-plane"></i>
+                                                                                                </div>
+
+                                                                                                <span class="tm-button-toggle tm-button-small tm-border tm-border-rounded">Откликнуться</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>003</td>
+                                                                <td>004</td>
+                                                                <td>005</td>
+                                                                <td>006</td>
+                                                                <td>007</td>
+                                                                <td class="tm-table-min">000</td>
+                                                                <td>008</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--right sidebar-->
+                        <!--<aside class="uk-width-medium">right sidebar</aside>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="uk-section"></footer>
+    </div>
+
+
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-flex uk-flex-center uk-margin-large-top">
+                <ul class="uk-nav">
+                    <li>
+                        <a href="index.html" class="uk-active"><span>Главная</span></a>
+                    </li>
+
+                    <li>
+                        <a href="services.html"><span>Услуги</span></a>
+                    </li>
+
+                    <li>
+                        <a href="prices.html"><span>Цены</span></a>
+                    </li>
+
+                    <li>
+                        <a href="about.html"><span>О нас</span></a>
+                    </li>
+
+                    <li>
+                        <a href="contacts.html"><span>Контакты и оплата</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

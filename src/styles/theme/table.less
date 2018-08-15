@@ -7,9 +7,13 @@
 // Variables
 // ========================================================================
 
-@table-header-cell-font-size:                   @global-small-font-size;
+@table-margin-vertical:                         0;
+
+@table-header-cell-font-size:                   @global-font-size;
 @table-header-cell-font-weight:                 normal;
-@table-header-cell-color:                       @global-muted-color;
+@table-header-cell-color:                       @global-color;//@global-muted-color;
+
+@table-hover-row-background:                    @global-default-background;
 
 //
 // New
@@ -22,11 +26,15 @@
 // Component
 // ========================================================================
 
-.hook-table-header-cell() { text-transform: uppercase; }
+.hook-table() {}
+
+.hook-table-header-cell() {
+    vertical-align: top;
+}
 
 .hook-table-cell() {}
 
-.hook-table-footer() {  }
+.hook-table-footer() {}
 
 .hook-table-caption() {}
 

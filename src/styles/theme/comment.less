@@ -7,6 +7,7 @@
 // Variables
 // ========================================================================
 
+@comment-list-margin-top:                       0;
 //
 // New
 //
@@ -32,7 +33,9 @@
 // Title
 // ========================================================================
 
-.hook-comment-title() {}
+.hook-comment-title() {
+    font-size: @global-font-size;
+}
 
 
 // Meta
@@ -61,8 +64,6 @@
 // ========================================================================
 
 .hook-comment-primary() {
-    padding: @comment-primary-padding;
-    background-color: @comment-primary-background;
 }
 
 

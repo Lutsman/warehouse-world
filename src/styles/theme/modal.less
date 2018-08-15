@@ -10,6 +10,7 @@
 @modal-header-background:                       @modal-dialog-background;
 @modal-footer-background:                       @modal-dialog-background;
 
+@modal-dialog-width:                            1200px;
 //
 // New
 //
@@ -33,7 +34,10 @@
 // Dialog
 // ========================================================================
 
-.hook-modal-dialog() {}
+.hook-modal-dialog() {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
 
 
 // Full

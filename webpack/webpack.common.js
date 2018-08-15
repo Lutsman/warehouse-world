@@ -8,6 +8,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const dest = Path.join(__dirname, '../dist');
 
+new Webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery'
+});
+
 module.exports = {
     entry: Path.resolve(__dirname, '../src/scripts/index'),
     output: {
@@ -22,14 +27,25 @@ module.exports = {
             {from: Path.resolve(__dirname, '../public'), to: 'public'}
         ]),
         new HtmlWebpackPlugin({
-            template: Path.resolve(__dirname, '../src/notices.html')
+            template: Path.resolve(__dirname, '../src/notices.html'),
+            file: "notices.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/messages.html'),
+            file: "messages.html",
+            inject: "body",
+        }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/tenders.html'),
+            file: "tenders.html",
+            inject: "body",
+        }),
+        new Webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
         }),
     ],
-    resolve: {
-        alias: {
-            '~': Path.resolve(__dirname, '../src')
-        }
-    },
     module: {
         rules: [
             {
@@ -37,8 +53,9 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                     options: {
-                        name: 'fonts/[name].[ext]',
-                        publicPath: 'images/',
+                        name: '[name].[ext]',
+                        outputPath: 'images/',
+                        publicPath: '../images/',
                     }
                 }
             },
@@ -47,8 +64,9 @@ module.exports = {
                 use: {
                     loader: 'file-loader',
                     options: {
-                        name: 'fonts/[name].[ext]',
-                        publicPath: 'fonts/',
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/',
+                        publicPath: '../fonts/',
                     }
                 }
             },
